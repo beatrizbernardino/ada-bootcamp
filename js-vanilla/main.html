@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+  /* Add shadows to create the "card" effect */
+        display:flex;
+        width: auto;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        margin-top: 10px;
+        
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        
+        .container {
+            align-items: center;
+            display: flex;
+            padding: 2px 16px;
+            width:auto;
+        }
+
+        .button{
+            margin-left: 10px;
+            height: 30px;
+        }
+
+        .con{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+        
+        }
+        .edit{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .form{
+       
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .add{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100px;
+            justify-content: space-around;
+            
+        }
+
+        .btn-group{
+            display: flex;
+        }.body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .parent{
+            display: flex;
+            margin-top: 100px;
+        }
+
+       
+
+    </style>
+    <script src="./server.js"></script>
+</head>
+<body class="body">
+
+    <div>
+        <h2>Hamburgueria ADA</h2>
+    </div>
+    <h3> Cardápio</h3>
+    
+    <form onsubmit="onSubmit()">
+        <div class="add">
+            <input type="text" id="title_" placeholder="Insira o título do produto" /> 
+            <input type="text" id="desc_" placeholder="Insira a Descricao do produto" /> 
+
+            <Button class="button" type="submit"> Adicionar</Button>
+        </div>
+    </form>
+ 
+
+    <div id="parent">
+
+
+    </div>
+    
+    <!-- <div class="card" id="#card">
+        <div class="container" id="#container">
+        <div class="con" id="con" >
+          <h4 id="title">Batata Frita</h4>
+          <p id = "desc">Batata frita com cheddar e bacon</p>
+        </div>
+        <div id="btn-parent" class="btn-group">
+            <button id="editar" class="button"> Editar</button>
+            <button id="apagar" class="button"> Remover</button>
+
+        </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="container">
+        <div class="con">
+          <h4><b>Coxinha</b></h4>
+          <p>Coxinha de Frango com Catupiry</p>
+        </div>
+        <div>
+            <button class="button"> Editar</button>
+            <button class="button"> Remover</button>
+
+        </div> -->
+        
+
+</body>
+</html>
